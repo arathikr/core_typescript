@@ -23,4 +23,23 @@ Type Annotations + Type Inference:
 
 1)Type Annotations: Code we add to tell Typescript what type of value a variable will refer to.[we developers tell typescript the type]
 
-2)Typescript tries to figure out what type of value a variable refers to.[Typescript guesses the type]
+Q)When to use type annotations?
+A)=>When we declare a variable on one line then initialize it later.
+=>When we want a variable to have a type that can't be inferred.
+=>When a function returns the 'any' type and we need to clarify the value
+
+2)Type Inference: Typescript tries to figure out what type of value a variable refers to.[Typescript guesses the type]
+
+# any type:
+
+=> A type, just as 'string' or 'boolean' are.
+=> Means TS has no idea what this is - can't check for correct property reference.
+=>**_ Avoid variables with 'any' at all costs _**
+
+# Types for Functions
+
+Type Annotations for functions:
+=> Code we add to tell Typescript what type of arguments a function will receive and what type of values it will return.
+
+Type Inference for functions:
+=> Typescript tries to figure out what type of value a function will return.(it wont figure out the types of arguments)
